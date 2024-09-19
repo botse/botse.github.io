@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="euc-jp">
+	<link rel="icon" type="image/x-icon" href="img/botse_logo.png"/>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BotSE 2020</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">   
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body width = "device-width">   
+    
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-custom btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >BotSE 2020</a>
+            </li>
+             <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Keynote Speaker</a>
+            </li>
+            <li>
+                <a href="#program" onclick = $("#menu-close").click(); >Program</a>
+            </li>
+            <li>
+                <a href="#Registration" onclick = $("#menu-close").click(); >Registration</a>
+            </li>
+            <li>
+                <a href="#papers" onclick = $("#menu-close").click(); >About BotSE</a>
+            </li>
+            <li>
+                <a href="#papers" onclick = $("#menu-close").click(); >Call for Papers</a>
+            </li>
+            <li>
+                <a href="#submission" onclick = $("#menu-close").click(); >How to Submit</a>
+            </li>
+            <li>
+                <a href="#dates" onclick = $("#menu-close").click(); >Important Dates</a>
+            </li>
+            <li>
+                <a href="#organization" onclick = $("#menu-close").click(); >Organization</a>
+            </li>
+            <li>
+                <a href="http://botse.org/2019" >BotSE 2019</a>
+            </li>
+            <!-- <li>
+                <a href="2016/" onclick = $("#menu-close").click(); >Previous Editions</a>
+            </li> -->
+        </ul>
+    </nav>
+
+    <header id="top" class="header">
+        <div class="text-vertical-horizontal-center">
+        <img align="left" style="display: block; max-width:400px; max-height:400px; width: auto; height: auto;" src="img/botse_logo.png">
+        <h1 align="text-center" style="font-size: 60px;padding-top: 5%;"> <b>2nd International Workshop on </br>Bots in Software Engineering</b> </h1>
+        <h2>Going virtual July 2nd, 2020 at 15:00-20:00 UTC <br> In conjunction with ICSE 2020</h2>
+        </br>
+         
+        </div>
+    </header>
+
+    <section id="papersAd" style="background-color: #F7306A">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="text-center">Check out our <a style="color: #333333" href="http://papers.botse.org">Repository for Bot-Related Research Papers</a> </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="keynotes" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Keynote Speakers</h2>
+                        <div align="middle" width="100%">
+                                    <img style="display: block; width:255px; height: 310px;" src="img/Jordi.png">
+                        </div>
+                         <h2 class="text-center">Jordi Cabot</h2>
+                         <h2 class="text-center">Lessons learned from building a commercial bot development platform</h2>
+
+                    <p class="lead">
+                        Two years ago we started the development of Xatkit, a (chat)bot development platform. That initial research prototype quickly evolved towards an open-source and low-code commercial chatbot platform that spans over 40 repositories and a couple of thousand commits.
+
+Along the journey, we have learned many lessons regarding the technical aspects of building (chat)bots (NLP, conversation design, intent libraries...)  but also realized that many challenges are similar to those in other software projects as the "software" part of a chatbot (the definition of the bot DSL, events management,  the flexible architecture to connect to external services, the DevOps cycle for bots ...) is as important as the "bot" part.
+<br>
+In this talk, I'll share these hard-learned lessons, covering not only the technical challenges but also the business model, organizational and legal issues involved in the commercialization of Xatkit. I will illustrate these challenges with a number of bot examples, including one that will enable you to talk with your GitHub repositories!
+
+                        <br> <br>
+
+                        <strong>About the speaker:</strong> Jordi Cabot is an ICREA Research Professor at Internet Interdisciplinary Institute, the Research center of the Open University of Catalonia (UOC) where he is leading the SOM Research Lab. Previously, he has been at Ecole des Mines de Nantes, Inria, University of Toronto, Politecnico di Milano and the Technical University of Catalonia.
+His research falls into the broad area of systems and software engineering, especially promoting the rigorous use of software models in all software tasks while keeping an eye on the most unpredictable element in any project: the people involved in it. 
+<br>
+Current research topics include pragmatic formal verification techniques, analysis of open source communities, open data exploitation, and the role AI can play in software development (and vice versa). Together with Gwendal Daniel, he is the co-founder of Xatkit, a generic and extensible platform for developing all kinds of bots and digital assistants.
+
+                        
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+<section id="keynotes" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                        <div align="middle" width="100%">
+                                    <img style="display: block; width:255px; height: 310px;" src="img/Gregor.png">
+                        </div>
+                         <h2 class="text-center">Gregor Martynus</h2>
+                         <h2 class="text-center">Automate GitHub workflows with Probot</h2>
+
+                    <p class="lead">
+Probot is an Open Source Node.js framework to create GitHub Apps. A GitHub app can be granted access to selected repositories which gives them transparent permissions for interacting with the repository. They can act on events, such as new commits, pull requests or releases, and they can mutate resources, such as creating comments or changing files.
+In this talk I walk through a few apps that have been built with Probot as a means of introduction, so you can understand the underlying mechanisms and build your own.
+
+<br> <br>
+ <strong>About the speaker:</strong> Gregor is a Software Engineer with 20+ years of experience. He is the maintainer of several Open Source projects and is automating workflows on GitHub since close to 10 years.
+
+<br>
+
+Twitter: <a href="https://twitter.com/gr2m">https://twitter.com/gr2m</a>
+<br>
+Blog: <a href="https://dev.to/gr2m/">https://dev.to/gr2m/</a>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+<section id="program" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">Program </h1>
+                    <h3 class="text-center">(All times shown below are in UTC) </h3>
+                    <div class="lead"> 
+                        <p class="text-center"></p>
+                    </div>
+                    <h4><b>Opening and Keynote</b></h4>
+                    <ul class="lead">
+                        <li> <span style="color:crimson">15:00 - 15:15 </span> Opening</li>
+                        <li> <span style="color:crimson">15:15 - 16:00 (30 Talk + 15 Q&A)</span> Keynote: Lessons learned from building a commercial bot development platform <br> <font size="4">Jordi Cabot</font></li>
+                    </ul>
+                    <br>
+
+                                        <h4><b>Session 1: Bots Helping Software Development</b></h4>
+                    <ul class="lead">
+                        <li> <span style="color:crimson">16:00 - 16:15 (10 Talk + 5 Q&A)</span> (invited) Experiences Building an Answer Bot for Gitter  <br> <font size="4">Ricardo Romero, Esteban Parra and Sonia Haiduc</font> 
+                        <br><a href="preprints/BotSE20_paper_9.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/je8TjdS7320" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a>
+                        </li> <br>
+                         <li> <span style="color:crimson">16:15 - 16:30 (10 Talk + 5 Q&A)</span> MSABot: A Chatbot Framework for Assisting in the Development and Operation of Microservice-Based Systems <br> <font size="4">  Chun-Ting Lin, Shang-Pin Ma and Yu-Wen Huang</font> <br><a href="preprints/BotSE20_paper_3.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/HkSXoYJUwTw" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a>
+                         </li> <br>
+                        <li> <span style="color:crimson">16:30 - 16:45 (10 Talk + 5 Q&A)</span> Conversational Bot for Newcomers Onboarding to Open Source Projects 
+ <br> <font size="4">James Dominic, Jada Houser, Igor Steinmacher, Charles Ritter and Paige Rodeghero</font><br><a href="preprints/BotSE20_paper_5.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/UmjjN2ZqXfU" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a> </li> <br>
+ <li> <span style="color:crimson">16:45 - 17:05</span> Open discussion </li> <br>
+
+                            </ul>
+<h4 class="text-center"><b>Break (10 mins)</b></h4>
+                    <h4><b>Session 2: Bot or Not</b></h4>
+                    <ul class="lead">
+                        <li> <span style="color:crimson">17:15 - 18:00 (30 Talk + 15 Q&A)</span> Keynote: Automate GitHub workflows with Probot <br> <font size="4">Gregor Martynus</font></li><br>
+                        <li> <span style="color:crimson">18:00 - 18:15 (10 Talk + 5 Q&A)</span> (invited) An Exploratory Study of Bot Commits  <br> <font size="4">Tapajit Dey, Bogdan Vasilescu and Audris Mockus</font><br><a href="https://arxiv.org/pdf/2003.07961.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/5tc7OQ9AV-k" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a> </li> <br>
+                        <li> <span style="color:crimson">18:15 - 18:30 (10 Talk + 5 Q&A)</span> Bot or not? Detecting bots in GitHub pull request activity based on comment similarity  <br> <font size="4">Mehdi Golzadeh, Damien Legay, Alexandre Decan and Tom Mens</font><br><a href="preprints/BotSE20_paper_2.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/15m_D-KvR-w" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a></li> <br>
+                         <li> <span style="color:crimson">18:30 - 18:50</span> Open discussion </li> <br>
+                            </ul>
+
+
+<h4 class="text-center"><b>Break (10 mins)</b></h4>
+                    <h4><b>Session 3: Bot Recommendations & Challenges</b></h4>
+                    <ul class="lead">
+                        <li> <span style="color:crimson">19:00 - 19:15 (10 Talk + 5 Q&A)</span> Sorry to Bother You Again: Developer Recommendation Choice Architectures for Designing Effective Bots  <br> <font size="4">Chris Brown and Chris Parnin</font><br><a href="preprints/BotSE20_paper_7.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/Th71ur8b7VU" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a> </li> <br>
+                        <li> <span style="color:crimson">19:15 - 19:30 (10 Talk + 5 Q&A)</span> The Inconvenient Side of Software Bots on Pull Requests <br> <font size="4">Mairieli Wessel and Igor Steinmacher</font> <br><a href="preprints/BotSE20_paper_6.pdf" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/y9WN_tr3lIA" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a>
+</li> <br>
+                        <li> <span style="color:crimson">19:30 - 19:45 (10 Talk + 5 Q&A)</span> Challenges and guidelines on designing test cases for test bots <br> <font size="4">Linda Erlenhov, Francisco Gomes de Oliveira Neto, Martin Chukaleski and Samer Daknache </font> <br><a href="https://arxiv.org/abs/2004.10143" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-link"></span> <font size="4">Pre-print</font></a> &nbsp; <a href="https://youtu.be/YNdE0VUDPVs" target="_blank" class="publication-link navigate"><span class="glyphicon glyphicon-film"></span> <font size="4">Presentation</font></a>
+</li> <br>
+                        <li> <span style="color:crimson">19:45 - 20:00</span> Open discussion </li> <br>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <br>
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+        <section id="Registration" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Registration</h2>
+
+                    <p class="lead">
+For authors and ICSE participants, please register through <a href="https://2020.icse-conferences.org/attending/registration" target="_blank">ICSE</a> and for external and non-author's you can register through <a href="https://2020.icse-conferences.org/attending/registration" target="_blank">ICSE</a> (25 USD) or <a href="https://www.eventbrite.com/e/botse-2020-tickets-109402337336?aff=ebdssbonlinesearch" target="_blank">Eventbrite</a> (free).
+
+
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section id="papers" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Call for Papers
+                        <br>
+                        International Workshop on Bots in Software Engineering
+                        <br>
+                        (BotSE)
+                    </h2>
+                    <div class="lead"> 
+                        <p class="text-center"></p>
+                    </div>
+                    <p class="lead">Bots (short for software robots) are software applications that perform often repetitive or simple tasks. In particular, social and chat bots interacting with humans are a recent research topic. Similarly, bots can be used to automate many tasks that are performed by software practitioners and teams in their day-to-day work. Recent work argue that bots can save developers' time and significantly increase productivity. Therefore, the goal of this one-day workshop is to bring together software engineering researchers and practitioners to discuss the opportunities and challenges of bots in software engineering.
+
+                    We solicit <strong> 4 page, research, experience report and position papers.</strong> Research papers are expected to describe new research results and make contributions to the body knowledge in the area. Experience reports are expected to describe experiences with (amongst other things) the development, deployment, and maintenance of bot-based systems in the software engineering domain. Position papers are expected to discuss controversial issues in the field, or describe interesting or thought provoking ideas that are not yet fully developed. Papers will be reviewed by at least three program committee members. Accepted research and experience report papers will be invited to give a talk to present their findings. Authors of accepted position papers will be invited to give a short lightning talk. 
+                    Papers may address issues along the general themes, including but not limited, to the following topics:
+
+                    <ul class="lead">
+                    <li> Using bots to derive software requirements and documentation </li>
+                    <li> Using bots in the context of the reliability and quality of software systems</li>
+                    <li> Using bots to support software system release and deployment</li>
+                    <li> Using bots to enhance and support testing & maintenance of software systems</li>
+                    <li> Supporting and answering developer questions using bots</li>
+                    <li> Using bots to ensure the safety, security, privacy and trustworthiness of software systems</li>
+                    <li> Effective processes for the development of bot-based software</li>
+                    <li> Privacy and ethics issues related to the use of bots in software systems</li>
+                    <li> Issues in the interaction of bots and developers and other stakeholders</li>
+                    <li> Experiences using bot frameworks in software systems
+                    </p>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    
+    </section>
+ 
+    <section id="submission" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">How to Submit (adapted from ICSE)</h2>
+                    <p class="lead">
+                        Submission must not exceed 4 pages, including all text, figures, tables, and appendices; one additional page containing only references is permitted. Submissions must conform to the <a href="https://www.acm.org/publications/proceedings-template">ACM Conference Proceedings Formatting Guidelines</a>, 
+
+                        LaTeX users must use <span style="color:crimson">\documentclass[sigconf,review]{acmart}</span> without modifying the provided <span style="color:crimson">acmart.cls</span> and <span style="color:crimson">ACM-Reference-Format.bst</span>, and use the ACM reference format for the bibliography (i.e., <span style="color:crimson">\bibliographystyle{ACM-Reference-Format}</span>).
+                        <br>
+                        The submission must also comply with the <a href="http://www.acm.org/publications/policies/plagiarism_policy">ACM plagiarism policy and procedures</a>. In particular, submissions must not have been published elsewhere and must not be under review elsewhere. The submission must also comply with the <a href="http://ieeeauthorcenter.ieee.org/publish-with-ieee/publishing-ethics/">IEEE Policy on Authorship.</a>
+                        <br>
+                        Submissions to the workshop can be made via <a href="
+                         https://easychair.org/conferences/?conf=botse20">easychair</a> by the submission deadline.
+                        <br>
+                        If a submission is accepted, at least one author of the paper is required to attend the workshop and present the paper in person. All accepted workshop papers will be published in the proceedings by ACM.
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </section>
+   
+    <section id="dates" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Important Dates</h2>
+                        <ul class="lead">
+                        <li>Submissions due: <strike>Jan 26, 2020 (Updated)</strike></li>
+                        <li>Notifications: <strike>Feb 25, 2020 </strike></li>
+                        <li>Camera-ready due:  <strike>March 16, 2020 </strike></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+ 
+    
+    <section id="organization" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Organization</h2>
+                    <h3>Organizers</h3>
+                    <ul class="lead">
+                    <li>Emad Shihab - Concordia University</li>
+                    <li>Stefan Wagner - University of Stuttgart</li>
+		    <li>Marco A. Gerosa - Northern Arizona University</li>
+                    </ul>
+                    <h3>Web Chair</h3>
+                    <ul class="lead">
+                        <li>
+                        Ahmad Abdellatif - Concordia University
+                        </li>
+                    </ul>
+                    <h3>Publicity Chair</h3>
+                    <ul class="lead">
+                    <li>
+                    Marvin Wyrich - University of Stuttgart
+                    </li>
+                    </ul>
+                    <h3>Zoom Master</h3>
+                    <ul class="lead">
+                        <li>
+                        Khaled Badran - Concordia University
+                        </li>
+                    </ul>
+                    <h3>Program Committee</h3>
+                    <ul class="lead">
+                        <li>Walid Maalej - University of Hamburg</li>
+                        <li>Martin Monperrus - KTH Royal Institute of Technology</li>
+                        <li>Riccardo Scandariato - University of Gothenburg</li>
+<li>Margaret-Anne Storey - University of Victoria</li>                      
+                        <li>Xin Xia - Monash University</li>
+                        <li>Alexander Serebrenik - Eindhoven University of Technology</li>
+                        <li>Nicole Novielli - Dipartimento di Informatica, University of Bari</li>
+
+                        <li>Andreas Schreiber - German Aerospace Center (DLR)</li>
+                        <li>Anthony Ventresque - University College Dublin</li>
+                        <li>Igor Steinmacher - Northern Arizona University</li>
+                                                
+                        <li>Abram Hindle - University of Alberta</li>
+                        <li>Diego Elias Costa - Concordia University</li>
+                        <li>Mairieli Wessel - University of Sao Paulo</li>
+                        
+                        <li>Akinori Ihara - Wakayama University</li>
+                        <li>Shivali Agarwal - IBM, India Research Lab</li>
+                        <li>Philipp Leitner - University of Gothenburg</li>
+                    </ul>
+
+                </div>
+            </div>
+          
+        </div>
+       
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Follow BotSE:</strong>
+                    </h4>
+                    <p><br></p>
+                    
+                    <br>
+                    <ul class="list-inline">
+                        
+                        <li>
+                            <a href="https://twitter.com/BotSE_WS"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/BotSEws"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    
+    <script src="js/bootstrap.min.js"></script>
+
+   
+    <script>
+   
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
