@@ -108,380 +108,244 @@
         </div>
     </section>
 
-    
-<canvas id="confetti-canvas"></canvas>
-<section id="keynotes" class="about"
-    style="padding: 60px 20px; background: #f9fafc; font-family: Arial, sans-serif;">
-    <div class="container">
-         <h2 style="margin-bottom: 40px; text-align: center;">
-            <span class="shimmer-title">
-                Keynote Speakers
-                <span class="spark" style="top:-10px; left:0%; animation-delay:0s;">&#10022;</span>
-                <span class="spark" style="top:-14px; left:25%; animation-delay:0.4s;">&#10022;</span>
-                <span class="spark" style="top:-8px;  left:50%; animation-delay:0.8s;">&#10022;</span>
-                <span class="spark" style="top:-12px; left:75%; animation-delay:0.3s;">&#10022;</span>
-                <span class="spark" style="top:-10px; left:100%; animation-delay:0.6s;">&#10022;</span>
-            </span>
-        </h2>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+    <canvas id="confetti-canvas"></canvas>
+    <section id="keynotes" class="about"
+        style="padding: 60px 20px; background: #f9fafc; font-family: Arial, sans-serif;">
+        <div class="container">
+            <h2 style="margin-bottom: 40px; text-align: center;">
+                <span class="shimmer-title">
+                    Keynote Speakers
+                    <span class="spark" style="top:-10px; left:0%; animation-delay:0s;">&#10022;</span>
+                    <span class="spark" style="top:-14px; left:25%; animation-delay:0.4s;">&#10022;</span>
+                    <span class="spark" style="top:-8px;  left:50%; animation-delay:0.8s;">&#10022;</span>
+                    <span class="spark" style="top:-12px; left:75%; animation-delay:0.3s;">&#10022;</span>
+                    <span class="spark" style="top:-10px; left:100%; animation-delay:0.6s;">&#10022;</span>
+                </span>
+            </h2>
 
-            <!-- Speaker 1 -->
-            <div id="card-cb" class="speaker-card" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center; flex: 1 1 45%;">
-                <img src="img/ChrisBrown.png" alt="Dr. Chris Brown"
-                    style="display: block; width:300px; height:auto; border-radius: 10px; margin: 0 auto 20px;">
-                <h3 style="font-size: 2rem; margin-bottom: 15px;">Dr. Chris Brown</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
 
-                <div class="tabs">
-                    <button class="tab-btn active" onclick="switchTab(this, 'cb-abstract', 'card-cb')">Abstract</button>
-                    <button class="tab-btn" onclick="switchTab(this, 'cb-bio', 'card-cb')">Bio</button>
+                <!-- Speaker 1 -->
+                <div id="card-cb" class="speaker-card"
+                    style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center; flex: 1 1 45%;">
+                    <img src="img/ChrisBrown.png" alt="Dr. Chris Brown"
+                        style="display: block; width:300px; height:auto; border-radius: 10px; margin: 0 auto 20px;">
+                    <h3 style="font-size: 2rem; margin-bottom: 15px;">Dr. Chris Brown</h3>
+
+                    <div class="tabs">
+                        <button class="tab-btn active"
+                            onclick="switchTabKeynote(this, 'cb-abstract', 'card-cb')">Abstract</button>
+                        <button class="tab-btn" onclick="switchTabKeynote(this, 'cb-bio', 'card-cb')">Bio</button>
+                    </div>
+
+                    <div id="cb-abstract" class="tab-content active" style="text-align: left;">
+                        <div class="talk-title">The Fall-Off of Bots in Software Engineering</div>
+                        <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Over the past decade, bots have
+                            become embedded in modern software development. Yet empirical evidence suggests many bots
+                            fail to achieve sustained adoption and trust. Further, these traditional automation systems
+                            will continue to become obsolete with the rise in adoption and capabilities of generative AI
+                            agents. Drawing on recent research on bots and real-world development workflows, this
+                            keynote will explore the "fall off" by characterizing the shortcomings of bots, relating it
+                            to the come up of AI agents in software engineering contexts, and discussing implications
+                            for the next generation of bots, agents, and research.</p>
+                    </div>
+
+                    <div id="cb-bio" class="tab-content" style="text-align: left;">
+                        <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Dr. Chris Brown is an Assistant
+                            Professor in the Department of Computer Science at Virginia Tech. His research combines
+                            empirical methods, human-centered studies, interdisciplinary concepts, and automated tools
+                            to equip developers with evidence-based tools and practices that improve programming
+                            behaviors, boost productivity, and support better decision-making&mdash;ultimately
+                            contributing to more effective and trustworthy software development.
+                            <br>
+                            He leads the &ldquo;Code World, No Blanket&rdquo; research group at Virginia Tech, and has
+                            published widely in top-tier venues such as ESEC/FSE, MSR, SANER, ICSE, etc. His
+                            contributions on bots, agents, and digital nudges for software engineering have gained broad
+                            recognition, including a <em>Google Research Award</em> and multiple <em>Commonwealth Cyber
+                                Initiative (CCI)</em> grants supporting projects on privacy, developer support, and
+                            software engineering interventions.
+                        </p>
+                    </div>
                 </div>
 
-                <div id="cb-abstract" class="tab-content active" style="text-align: left;">
-                    <div class="talk-title">The Fall-Off of Bots in Software Engineering</div>
-                    <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Over the past decade, bots have become embedded in modern software development. Yet empirical evidence suggests many bots fail to achieve sustained adoption and trust. Further, these traditional automation systems will continue to become obsolete with the rise in adoption and capabilities of generative AI agents. Drawing on recent research on bots and real-world development workflows, this keynote will explore the "fall off" by characterizing the shortcomings of bots, relating it to the come up of AI agents in software engineering contexts, and discussing implications for the next generation of bots, agents, and research.</p>
+                <!-- Speaker 2 -->
+                <div id="card-gp" class="speaker-card"
+                    style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center; flex: 1 1 45%;">
+                    <img src="img/GustavoPinto.png" alt="Dr. Gustavo Pinto"
+                        style="display: block; width:300px; height:auto; border-radius: 10px; margin: 0 auto 20px;">
+                    <h3 style="font-size: 2rem; margin-bottom: 15px;">Dr. Gustavo Pinto</h3>
+
+                    <div class="tabs">
+                        <button class="tab-btn active"
+                            onclick="switchTabKeynote(this, 'gp-abstract', 'card-gp')">Abstract</button>
+                        <button class="tab-btn" onclick="switchTabKeynote(this, 'gp-bio', 'card-gp')">Bio</button>
+                    </div>
+
+                    <div id="gp-abstract" class="tab-content active" style="text-align: left;">
+                        <div class="talk-title">Building an Internal Coding Agent at Zup: Lessons and Open Questions
+                        </div>
+                        <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Building and deploying internal
+                            coding agents in enterprise software teams remains difficult, especially when moving beyond
+                            prototypes into daily developer workflows. This is a problem because technical performance
+                            alone is not enough: integration constraints, trust, evaluation, and adoption dynamics often
+                            determine whether these agents create real value. In this talk, we will drive into Zup's
+                            experience in building its own coding agent. As we discovered, some of the hardest blockers
+                            are not in code generation itself, but in the socio-technical design choices required to
+                            make an agent reliable, usable, and governable in practice. These lessons point to a broader
+                            research agenda for software engineering, with concrete opportunities to study how coding
+                            agents should be designed, evaluated, and introduced in real organizations.</p>
+                    </div>
+
+                    <div id="gp-bio" class="tab-content" style="text-align: left;">
+                        <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Dr. Gustavo Pinto is an assistant
+                            professor at the Federal University of Par&aacute;, Brazil and Senior Staff at Zup
+                            Innovation, a Brazilian tech company. He holds a PhD in Software Engineering from the
+                            Informatics Center at the Federal University of Pernambuco, Brazil. He has very broad
+                            interests in Software Engineering, including Open Source Software (communities and
+                            contributors), Human Aspects of Software Engineering, Empirical Software Engineering, and
+                            Mining Software Repositories techniques.
+                            <br>
+                            He has published over 100 research papers, some of them in the most important venues in his
+                            field (e.g., ICSE, ASE, CSCW, TSE, CACM, etc). He won several international research and
+                            service awards, including the <em>MSR Ric Holt Early Career Achievement Award</em> in 2022,
+                            one <em>ACM SIGSOFT Distinguished Paper Award</em> in ICSE 2021, and one <em>JSS Paper of
+                                the Year</em> in 2019. He also writes regularly at his <em>ML4SE</em> newsletter.
+                        </p>
+                    </div>
                 </div>
 
-                <div id="cb-bio" class="tab-content" style="text-align: left;">
-                    <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Dr. Chris Brown is an Assistant Professor in the Department of Computer Science at Virginia Tech. His research combines empirical methods, human-centered studies, interdisciplinary concepts, and automated tools to equip developers with evidence-based tools and practices that improve programming behaviors, boost productivity, and support better decision-making&mdash;ultimately contributing to more effective and trustworthy software development.
-                    <br>
-                    He leads the &ldquo;Code World, No Blanket&rdquo; research group at Virginia Tech, and has published widely in top-tier venues such as ESEC/FSE, MSR, SANER, ICSE, etc. His contributions on bots, agents, and digital nudges for software engineering have gained broad recognition, including a <em>Google Research Award</em> and multiple <em>Commonwealth Cyber Initiative (CCI)</em> grants supporting projects on privacy, developer support, and software engineering interventions.</p>
-                </div>
             </div>
-
-            <!-- Speaker 2 -->
-            <div id="card-gp" class="speaker-card" style="background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); text-align: center; flex: 1 1 45%;">
-                <img src="img/GustavoPinto.png" alt="Dr. Gustavo Pinto"
-                    style="display: block; width:300px; height:auto; border-radius: 10px; margin: 0 auto 20px;">
-                <h3 style="font-size: 2rem; margin-bottom: 15px;">Dr. Gustavo Pinto</h3>
-
-                <div class="tabs">
-                    <button class="tab-btn active" onclick="switchTab(this, 'gp-abstract', 'card-gp')">Abstract</button>
-                    <button class="tab-btn" onclick="switchTab(this, 'gp-bio', 'card-gp')">Bio</button>
-                </div>
-
-                <div id="gp-abstract" class="tab-content active" style="text-align: left;">
-                    <div class="talk-title">Building an Internal Coding Agent at Zup: Lessons and Open Questions</div>
-                    <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Building and deploying internal coding agents in enterprise software teams remains difficult, especially when moving beyond prototypes into daily developer workflows. This is a problem because technical performance alone is not enough: integration constraints, trust, evaluation, and adoption dynamics often determine whether these agents create real value. In this talk, we will drive into Zup's experience in building its own coding agent. As we discovered, some of the hardest blockers are not in code generation itself, but in the socio-technical design choices required to make an agent reliable, usable, and governable in practice. These lessons point to a broader research agenda for software engineering, with concrete opportunities to study how coding agents should be designed, evaluated, and introduced in real organizations.</p>
-                </div>
-
-                <div id="gp-bio" class="tab-content" style="text-align: left;">
-                    <p style="font-size: 1.5rem; line-height: 1.8; color: #444;">Dr. Gustavo Pinto is an assistant professor at the Federal University of Par&aacute;, Brazil and Senior Staff at Zup Innovation, a Brazilian tech company. He holds a PhD in Software Engineering from the Informatics Center at the Federal University of Pernambuco, Brazil. He has very broad interests in Software Engineering, including Open Source Software (communities and contributors), Human Aspects of Software Engineering, Empirical Software Engineering, and Mining Software Repositories techniques.
-                    <br>
-                    He has published over 100 research papers, some of them in the most important venues in his field (e.g., ICSE, ASE, CSCW, TSE, CACM, etc). He won several international research and service awards, including the <em>MSR Ric Holt Early Career Achievement Award</em> in 2022, one <em>ACM SIGSOFT Distinguished Paper Award</em> in ICSE 2021, and one <em>JSS Paper of the Year</em> in 2019. He also writes regularly at his <em>ML4SE</em> newsletter.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
-
+    </section>
 
 
     <section id="papers-section" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Tab Navigation -->
-                    <ul class="nav nav-tabs" role="tablist" style="margin-bottom: 30px;">
-                        <li role="presentation" class="active">
-                            <a href="#accepted-papers" aria-controls="accepted-papers" role="tab"
-                                onclick="switchTab(event, 'accepted-papers')">Accepted Papers</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#call-for-papers" aria-controls="call-for-papers" role="tab"
-                                onclick="switchTab(event, 'call-for-papers')">Call for Papers</a>
-                        </li>
-                    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
 
-                    <!-- Tab Content -->
-                    <div class="tab-content">
-                        <!-- Accepted Papers Tab -->
-                        <div role="tabpanel" class="tab-pane fade in active" id="accepted-papers">
-                            <h2 class="text-center">Accepted Papers</h2>
-                            <ul class="lead" style="list-style: none; padding-left: 0;">
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Patterns of Bot Participation and Emotional
-                                        Influence in Open Source Development</span>
-                                    <a href="https://www.arxiv.org/pdf/2601.11138" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br>
-                                    <small style="margin-left: 30px;"> Matteo Vaccargiu, Riccardo Lai, Maria Ilaria
-                                        Lunesu, Andrea Pinna, Giuseppe Destefanis</small>
-                                    <!-- <small style="margin-left: 30px;">
-                                    <a href="#"><i class="fa fa-link"></i> DOI</a> 
-                                    <a href="#" style="margin-left: 10px;"><i class="fa fa-file-text"></i> Pre-print</a>
-                                </small> -->
-                                </li>
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Towards Structured, State-Aware, and
-                                        Execution-Grounded Reasoning for Software Engineering Agents</span><br>
-                                    <small style="margin-left: 30px;"> Tse-Hsun (Peter) Chen </small> <a href="https://www.arxiv.org/pdf/2602.04640" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a>
-                                </li>
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Reconsidering Conversational Norms in LLM Chatbots
-                                        for Sustainable AI</span> <a href="https://arxiv.org/pdf/2512.14673" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br>
-                                    <small style="margin-left: 30px;">Ronnie de Souza Santos, Cleyton Vanut Cordeiro de
-                                        Magalh&atilde;es, Italo Santos </small>
-                                </li>
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Experience Report: Handbook for Agent
-                                        Development</span>
-                                    <br>
-                                    <small style="margin-left: 30px;"> Leonhard Applis, Sungmin Kang</small>
-                                </li>
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs" role="tablist" style="margin-bottom: 30px;">
+                    <li role="presentation" class="active">
+                        <a href="javascript:void(0)" aria-controls="accepted-papers" role="tab"
+                            onclick="switchTab(event, 'accepted-papers')">Accepted Papers</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="javascript:void(0)" aria-controls="call-for-papers" role="tab"
+                            onclick="switchTab(event, 'call-for-papers')">Call for Papers</a>
+                    </li>
+                </ul>
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Bita: A Conversational Assistant for Fairness
-                                        Testing</span> <a href="https://arxiv.org/pdf/2512.05428" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br>
-                                    <small style="margin-left: 30px;"> Keeryn Johnson, Cleyton Vanut Cordeiro de
-                                        Magalh&atilde;es, Ronnie de Souza Santos </small>
-                                </li>
+                <!-- Tab Content -->
+                <div class="tab-content">
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Reformulate, Retrieve, Localize: Agents for
-                                        Repository-Level Bug Localization</span> <a href="https://www.arxiv.org/pdf/2512.07022" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br>
-                                    <small style="margin-left: 30px;"> Genevieve Caumartin, Glaucia Melo </small>
-                                </li>
+                    <!-- Accepted Papers Tab -->
+                    <div role="tabpanel" class="tab-pane in active" id="accepted-papers">
+                        <h2 class="text-center">Accepted Papers</h2>
+                        <ul class="lead" style="list-style: none; padding-left: 0;">
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Patterns of Bot Participation and Emotional Influence in Open Source Development</span>
+                                <a href="https://www.arxiv.org/pdf/2601.11138" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Matteo Vaccargiu, Riccardo Lai, Maria Ilaria Lunesu, Andrea Pinna, Giuseppe Destefanis</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Towards Structured, State-Aware, and Execution-Grounded Reasoning for Software Engineering Agents</span><br>
+                                <small style="margin-left: 30px;">Tse-Hsun (Peter) Chen</small>
+                                <a href="https://www.arxiv.org/pdf/2602.04640" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Reconsidering Conversational Norms in LLM Chatbots for Sustainable AI</span>
+                                <a href="https://arxiv.org/pdf/2512.14673" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Ronnie de Souza Santos, Cleyton Vanut Cordeiro de Magalh&atilde;es, Italo Santos</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Experience Report: Handbook for Agent Development</span><br>
+                                <small style="margin-left: 30px;">Leonhard Applis, Sungmin Kang</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Bita: A Conversational Assistant for Fairness Testing</span>
+                                <a href="https://arxiv.org/pdf/2512.05428" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Keeryn Johnson, Cleyton Vanut Cordeiro de Magalh&atilde;es, Ronnie de Souza Santos</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Reformulate, Retrieve, Localize: Agents for Repository-Level Bug Localization</span>
+                                <a href="https://www.arxiv.org/pdf/2512.07022" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Genevieve Caumartin, Glaucia Melo</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Agentic RTE: A Framework for Synchronizing Multimodal Software Artifacts</span><br>
+                                <small style="margin-left: 30px;">Tales Mello Paiva, Ivens da Silva Portugal, Paulo Alencar, Donald Cowan</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Developer Challenges in the Adoption of Model Context Protocol in AI Agent Development</span>
+                                <a href="https://das.encs.concordia.ca/pdf/oyelayo_BoatSE2026.pdf" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Oluwatoyosi Oyelayo, Samuel Abedu, SayedHassan Khatoonabadi, Emad Shihab</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Experiences Developing an AI Chatbot in the Pharmaceutical Industry</span>
+                                <a href="https://das.encs.concordia.ca/pdf/abedu_BoatSE2026.pdf" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Samuel Abedu, Saviour Owolabi, Mayra Sofia Ruiz Rodriguez, Adam Yuen, Cedric Lim Ah Tock, Ali Zaraket, Ahmad Abdellatif, Emad Shihab, Nahal Nasser</small>
+                            </li>
+                            <li style="margin-bottom: 25px;">
+                                <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
+                                <span style="font-size: 1.2em;">Essence Coach: A Bot for Software Practice Adoption</span>
+                                <a href="https://www.arxiv.org/pdf/2508.16445" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;"><b>pre-print</b></a><br>
+                                <small style="margin-left: 30px;">Sonia Nicoletti, Paolo Ciancarini</small>
+                            </li>
+                        </ul>
+                    </div><!-- ✅ closes #accepted-papers -->
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Agentic RTE: A Framework for Synchronizing
-                                        Multimodal Software Artifacts</span><br>
-                                    <small style="margin-left: 30px;"> Tales Mello Paiva, Ivens da Silva Portugal, Paulo
-                                        Alencar, Donald Cowan </small>
-                                </li>
+                    <!-- Call for Papers Tab -->
+                    <div role="tabpanel" class="tab-pane" id="call-for-papers">
+                        <h2 class="text-center">Call for Papers<br>International Workshop on Bots and Agents in Software Engineering<br>(BoatSE)</h2>
+                        <p class="lead" style="text-align: justify;">
+                            Bots (short for software robots) are software applications that perform often repetitive or simple tasks. In particular, social and chat bots interacting with humans are a recent research topic. Similarly, bots can be used to automate many tasks that are performed by software practitioners and teams in their day-to-day work. Recent work argue that bots can save developers' time and significantly increase productivity. Therefore, the goal of this one-day workshop is to bring together software engineering researchers and practitioners to discuss the opportunities and challenges of bots in software engineering. We solicit <b>6-page work in progress papers, position papers, and experience reports.</b> Work in progress papers are expected to describe new research results and make contributions to the body knowledge in the area. Position papers are expected to discuss controversial issues in the field, or describe interesting or thought provoking ideas that are not yet fully developed. Experience reports are expected to describe experiences with (amongst other things) the development, deployment, and maintenance of bot-based systems in the software engineering domain. We have also included <b>5-page extended abstract publications</b> free of APC charges that will appear as extended abstracts in the proceedings. All submissions will be reviewed by at least three program committee members. Accepted submissions will be invited to give a talk to present their findings.
+                        </p>
+                        <ul class="lead">
+                            <li>Using bots and agents to derive software requirements and documentation</li>
+                            <li>Using bots and agents in the context of the reliability, quality, safety, security, privacy, and trustworthiness of software systems</li>
+                            <li>Using bots and agents to support software continuous integration, deployment, and delivery</li>
+                            <li>Using bots and agents to enhance and support software testing &amp; maintenance</li>
+                            <li>Supporting and answering developer questions using bots</li>
+                            <li>Issues related to the use of, or research on, SE bots and agents (e.g., privacy, ethical, human-computer interaction)</li>
+                            <li>Practical experiences in developing bots</li>
+                            <li>Experiences on using bot frameworks in software systems</li>
+                        </ul>
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Developer Challenges in the Adoption of Model
-                                        Context Protocol in AI Agent Development</span> <a href="https://das.encs.concordia.ca/pdf/oyelayo_BoatSE2026.pdf" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br><br>
-                                    <small style="margin-left: 30px;"> Oluwatoyosi Oyelayo, Samuel Abedu, SayedHassan
-                                        Khatoonabadi, Emad Shihab </small>
-                                </li>
+                        <h2 class="text-center">Important Dates</h2>
+                        <p class="lead">All deadlines are firm at the Anywhere on Earth (AoE):</p>
+                        <ul class="lead">
+                            <li>Submission Deadline: 27 October 2025</li>
+                            <li>Acceptance Notification: 24 November 2025</li>
+                            <li>Camera Ready: 26 January 2026</li>
+                        </ul>
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Experiences Developing an AI Chatbot in the
-                                        Pharmaceutical Industry</span> <a href="https://das.encs.concordia.ca/pdf/abedu_BoatSE2026.pdf" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br><br>
-                                    <small style="margin-left: 30px;"> Samuel Abedu, Saviour Owolabi, Mayra Sofia Ruiz
-                                        Rodriguez, Adam Yuen, Cedric Lim Ah Tock, Ali Zaraket, Ahmad Abdellatif, Emad
-                                        Shihab, Nahal Nasser </small>
-                                </li>
+                        <h2 class="text-center">How to Submit (adapted from ICSE)</h2>
+                        <p class="lead" style="text-align: justify;">
+                            Submissions should be made via <a href="https://icse2026-boatse.hotcrp.com">HotCRP</a> by the submission deadline.<br><br>
+                            All submissions must be in PDF format and conform, at the time of submission, to the official ACM Primary Article Template, which can be obtained from the <a href="https://www.acm.org/publications/proceedings-template">ACM Proceedings Template page</a>.
+                            LaTeX users should use the <code>sigconf</code> option and the <code>review</code> option to produce line numbers for reviewer reference. The following LaTeX code should be placed at the start of the document:<br><br>
+                            <span style="color:crimson">\documentclass[sigconf,review]{acmart}</span><br><br>
+                            Submissions must not exceed 6 pages, including all text, figures, tables, and appendices; one additional page containing only references is permitted.<br><br>
+                            By submitting to BoatSE 2026, authors acknowledge awareness and agreement with the <a href="https://www.acm.org/publications/policies/plagiarism">ACM Policy and Procedures on Plagiarism</a> and the <a href="https://www.ieee.org/publications/rights/plagiarism/id-plagiarism.html">IEEE Plagiarism FAQ</a>.
+                        </p>
+                    </div><!-- ✅ closes #call-for-papers -->
 
-                                <li style="margin-bottom: 25px;">
-                                    <i class="fa fa-star" style="color: #ffd700; margin-right: 10px;"></i>
-                                    <span style="font-size: 1.2em;">Essence Coach: A Bot for Software Practice
-                                        Adoption</span> <a href="https://www.arxiv.org/pdf/2508.16445" target="_blank" style="font-size: 0.85em; color: #4CAF50; text-decoration: none; 
-          border: 1px solid #4CAF50; padding: 1px 5px; border-radius: 3px;">
-                                        <b>pre-print</b>
-                                    </a><br>
-                                    <small style="margin-left: 30px;"> Sonia Nicoletti, Paolo Ciancarini</small>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Call for Papers Tab -->
-                        <div role="tabpanel" class="tab-pane fade" id="call-for-papers">
-                            <h2 class="text-center">Call for Papers
-                                <br>
-                                International Workshop on Bots and Agents in Software Engineering
-                                <br>
-                                (BoatSE)
-                            </h2>
-                            <div class="lead">
-                                <p class="text-center"></p>
-                            </div>
-                            <p class="lead" style="text-align: justify;">
-                                Bots (short for software robots) are software applications that perform often repetitive
-                                or
-                                simple tasks. In particular, social and chat bots interacting with humans are a recent
-                                research
-                                topic. Similarly, bots can be used to automate many tasks that are performed by software
-                                practitioners and teams in their day-to-day work. Recent work argue that bots can save
-                                developers' time and significantly increase productivity. Therefore, the goal of this
-                                one-day
-                                workshop is to bring together software engineering researchers and practitioners to
-                                discuss the
-                                opportunities and challenges of bots in software engineering. We solicit <b>6-page work
-                                    in
-                                    progress papers, position papers, and experience reports.</b> Work in progress
-                                papers are
-                                expected to describe new research results and make contributions to the body knowledge
-                                in the
-                                area. Position papers are expected to discuss controversial issues in the field, or
-                                describe
-                                interesting or thought provoking ideas that are not yet fully developed. Experience
-                                reports are
-                                expected to describe experiences with (amongst other things) the development,
-                                deployment, and
-                                maintenance of bot-based systems in the software engineering domain. We have also
-                                included <b>
-                                    5-page extended abstract publications</b> free of APC charges that will appear as
-                                extended
-                                abstracts in the proceedings. All submissions will be reviewed by at least three program
-                                committee members. Accepted submissions will be invited to give a talk to present their
-                                findings. Submissions may address issues along the general themes, including but not
-                                limited, to
-                                the following topics:
-                            </p>
-
-                            <ul class="lead">
-                                <li>Using bots and agents to derive software requirements and documentation</li>
-                                <li>Using bots and agents in the context of the reliability, quality, safety, security,
-                                    privacy, and trustworthiness of software systems</li>
-                                <li>Using bots and agents to support software continuous integration, deployment, and
-                                    delivery</li>
-                                <li>Using bots and agents to enhance and support software testing & maintenance</li>
-                                <li>Supporting and answering developer questions using bots</li>
-                                <li>Issues related to the use of, or research on, SE bots and agents (e.g., privacy,
-                                    ethical,
-                                    human-computer interaction)</li>
-                                <li>Practical experiences in developing bots</li>
-                                <li>Experiences on using bot frameworks in software systems</li>
-                            </ul>
-
-
-                            <section id="dates" class="about">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h2 class="text-center">Important Dates</h2>
-                                            <p class="lead">All deadlines are firm at the Anywhere on Earth (AoE):</p>
-
-                                            <ul class="lead">
-
-                                                <!-- <li>Submission Deadline: 11 November 2024 </li> -->
-                                                <!-- <li>Lightning Talks Submission Deadline: 15 November 2024 </li> -->
-                                                <li>Submission Deadline: 27 October 2025</li>
-                                                <!-- <li>Lightning talks submission deadline: 24 October 2025</li> -->
-                                                <li>Acceptance Notification: 24 November 2025 </li>
-                                                <li>Camera Ready: 26 January 2026 </li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <section id="submission" class="about">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <h2 class="text-center">How to Submit (adapted from ICSE)</h2>
-                                                <p class="lead" style="text-align: justify;">
-
-
-                                                    Submissions should be made via <a
-                                                        href="https://icse2026-boatse.hotcrp.com">HotCRP</a> by
-                                                    the submission deadline. <br><br>
-
-                                                    All submissions must be in PDF format and conform, at the time of
-                                                    submission, to the
-                                                    official ACM Primary Article Template, which can be obtained from
-                                                    the
-                                                    <a href="https://www.acm.org/publications/proceedings-template">ACM
-                                                        Proceedings Template
-                                                        page</a>.
-                                                    LaTeX users should use the <code>sigconf</code> option and the
-                                                    <code>review</code> option to
-                                                    produce line numbers for reviewer reference.
-                                                    The following LaTeX code should be placed at the start of the
-                                                    document:
-                                                    <br><br>
-                                                    <span
-                                                        style="color:crimson">\documentclass[sigconf,review]{acmart}</span>
-                                                    <br><br>
-                                                    Submissions must not exceed 6 pages, including all text, figures,
-                                                    tables, and appendices;
-                                                    one additional page containing only references is permitted.
-                                                    <br><br>
-                                                    By submitting to BoatSE 2026, authors acknowledge awareness and
-                                                    agreement with the
-                                                    <a href="https://www.acm.org/publications/policies/plagiarism">ACM
-                                                        Policy and Procedures on
-                                                        Plagiarism</a>
-                                                    and the <a
-                                                        href="https://www.ieee.org/publications/rights/plagiarism/id-plagiarism.html">IEEE
-                                                        Plagiarism FAQ</a>.
-                                                    Papers must not have been published or be under review elsewhere
-                                                    during the BoatSE 2026
-                                                    review process.
-                                                    <br><br>
-                                                    Authors should acknowledge that they conform to the authorship
-                                                    policy of the IEEE,
-                                                    submission policy of the IEEE, and the authorship policy of the ACM
-                                                    (and associated FAQ).
-                                                    This includes following these points related to the use of
-                                                    Generative AI:
-                                                <ul class="lead">
-                                                    <li style="text-align: justify;">"Generative AI tools and
-                                                        technologies, such as ChatGPT, may
-                                                        not be listed as authors of an ACM published Work. The use of
-                                                        generative AI tools and
-                                                        technologies to create content is permitted but must be fully
-                                                        disclosed in the Work. For
-                                                        example, the authors could include the following statement in
-                                                        the Acknowledgements
-                                                        section of the Work: ChatGPT was utilized to generate sections
-                                                        of this Work, including
-                                                        text, tables, graphs, code, data, citations, etc.). If you are
-                                                        uncertain about the need
-                                                        to disclose the use of a particular tool, err on the side of
-                                                        caution, and include a
-                                                        disclosure in the acknowledgements section of the Work." - ACM
-                                                    </li>
-                                                    <li style="text-align: justify;">"The use of artificial intelligence
-                                                        (AI)-generated text in
-                                                        an article shall be disclosed in the acknowledgements section of
-                                                        any paper submitted to
-                                                        an IEEE Conference or Periodical. The sections of the paper that
-                                                        use AI-generated text
-                                                        shall have a citation to the AI system used to generate the
-                                                        text." - IEEE</li>
-                                                    <li style="text-align: justify;">"If you are using generative AI
-                                                        software tools to edit and
-                                                        improve the quality of your existing text in much the same way
-                                                        you would use a typing
-                                                        assistant like Grammarly to improve spelling, grammar,
-                                                        punctuation, clarity, engagement
-                                                        or to use a basic word processing system to correct spelling or
-                                                        grammar, it is not
-                                                        necessary to disclose such usage of these tools in your Work." -
-                                                        ACM</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                            </section>
-
-    </section>
+                </div><!-- ✅ closes .tab-content -->
+            </div><!-- ✅ closes .col-lg-12 -->
+        </div><!-- ✅ closes .row -->
+    </div><!-- ✅ closes .container -->
+</section><!-- ✅ closes #papers-section -->
 
     <section id="organization" class="about">
         <div class="container">
@@ -624,78 +488,78 @@
     </script>
 
 
-<!-- for switching tabs in keynotes section -->
-<script>
-    function switchTab(btn, targetId, cardId) {
-        const card = document.getElementById(cardId);
-        card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        card.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById(targetId).classList.add('active');
-    }
-</script>
-
-
-<!-- for confetti effect on keynote title -->
-
-<script>
-    const canvas = document.getElementById('confetti-canvas');
-    const ctx = canvas.getContext('2d');
-
-    function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
-    resize();
-    window.addEventListener('resize', resize);
-
-    let particles = [];
-
-    function randomColor() {
-        const colors = ['#f0c040','#2e6da4','#e74c3c','#2ecc71','#9b59b6','#e67e22'];
-        return colors[Math.floor(Math.random() * colors.length)];
-    }
-
-    function launchConfetti() {
-        particles = [];
-        for (let i = 0; i < 180; i++) {
-            particles.push({
-                x: canvas.width / 2,
-                y: canvas.height * 0.12,
-                vx: (Math.random() - 0.5) * 16,
-                vy: (Math.random() - 1.4) * 10,
-                size: Math.random() * 8 + 4,
-                color: randomColor(),
-                rotation: Math.random() * 360,
-                rotationSpeed: (Math.random() - 0.5) * 6,
-                shape: Math.random() > 0.5 ? 'rect' : 'circle',
-                alpha: 1
-            });
+    <!-- for switching tabs in keynotes section -->
+    <script>
+        function switchTabKeynote(btn, targetId, cardId) {
+            const card = document.getElementById(cardId);
+            card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            card.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(targetId).classList.add('active');
         }
-        animateConfetti();
-    }
+    </script>
 
-    function animateConfetti() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-            p.x += p.vx;
-            p.vy += 0.3;
-            p.y += p.vy;
-            p.rotation += p.rotationSpeed;
-            p.alpha -= 0.011;
-            ctx.save();
-            ctx.globalAlpha = Math.max(p.alpha, 0);
-            ctx.translate(p.x, p.y);
-            ctx.rotate(p.rotation * Math.PI / 180);
-            ctx.fillStyle = p.color;
-            if (p.shape === 'rect') ctx.fillRect(-p.size/2, -p.size/2, p.size, p.size * 0.5);
-            else { ctx.beginPath(); ctx.arc(0, 0, p.size/2, 0, Math.PI*2); ctx.fill(); }
-            ctx.restore();
-        });
-        particles = particles.filter(p => p.alpha > 0);
-        if (particles.length > 0) requestAnimationFrame(animateConfetti);
-        else ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
 
-    document.addEventListener('DOMContentLoaded', () => launchConfetti());
-</script>
+    <!-- for confetti effect on keynote title -->
+
+    <script>
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        resize();
+        window.addEventListener('resize', resize);
+
+        let particles = [];
+
+        function randomColor() {
+            const colors = ['#f0c040', '#2e6da4', '#e74c3c', '#2ecc71', '#9b59b6', '#e67e22'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function launchConfetti() {
+            particles = [];
+            for (let i = 0; i < 180; i++) {
+                particles.push({
+                    x: canvas.width / 2,
+                    y: canvas.height * 0.12,
+                    vx: (Math.random() - 0.5) * 16,
+                    vy: (Math.random() - 1.4) * 10,
+                    size: Math.random() * 8 + 4,
+                    color: randomColor(),
+                    rotation: Math.random() * 360,
+                    rotationSpeed: (Math.random() - 0.5) * 6,
+                    shape: Math.random() > 0.5 ? 'rect' : 'circle',
+                    alpha: 1
+                });
+            }
+            animateConfetti();
+        }
+
+        function animateConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.vy += 0.3;
+                p.y += p.vy;
+                p.rotation += p.rotationSpeed;
+                p.alpha -= 0.011;
+                ctx.save();
+                ctx.globalAlpha = Math.max(p.alpha, 0);
+                ctx.translate(p.x, p.y);
+                ctx.rotate(p.rotation * Math.PI / 180);
+                ctx.fillStyle = p.color;
+                if (p.shape === 'rect') ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.5);
+                else { ctx.beginPath(); ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2); ctx.fill(); }
+                ctx.restore();
+            });
+            particles = particles.filter(p => p.alpha > 0);
+            if (particles.length > 0) requestAnimationFrame(animateConfetti);
+            else ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => launchConfetti());
+    </script>
 
 </body>
 

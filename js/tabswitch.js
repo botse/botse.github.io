@@ -1,24 +1,22 @@
-// Tab switching functionality
+console.log('tabswitch.js loaded');
+
 function switchTab(event, tabId) {
     event.preventDefault();
-    
-    // Remove active class from all tabs
-    var tabs = document.querySelectorAll('.nav-tabs li');
-    tabs.forEach(function(tab) {
+
+    // Update active nav tab
+    document.querySelectorAll('#papers-section .nav-tabs li').forEach(function(tab) {
         tab.classList.remove('active');
     });
-    
-    // Add active class to clicked tab
     event.target.parentElement.classList.add('active');
-    
-    // Hide all tab panes
-    var tabPanes = document.querySelectorAll('.tab-pane');
-    tabPanes.forEach(function(pane) {
-        pane.classList.remove('in', 'active');
-    });
-    
-    // Show selected tab pane
-    var selectedPane = document.getElementById(tabId);
-    selectedPane.classList.add('in', 'active');
-}
 
+    // Force hide both panes
+    var panes = ['accepted-papers', 'call-for-papers'];
+    panes.forEach(function(id) {
+        var el = document.getElementById(id);
+        el.style.cssText = 'display: none !important;';
+    });
+
+    // Force show selected pane
+    var selected = document.getElementById(tabId);
+    selected.style.cssText = 'display: block !important;';
+}

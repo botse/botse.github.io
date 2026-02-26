@@ -229,3 +229,9 @@
     border-left: 4px solid #2e6da4;
     border-radius: 0 6px 6px 0;
 }
+
+#papers-section .tab-content {
+    display: block !important;
+    height: auto !important;
+    min-height: 100px;
+}
