@@ -1,5 +1,3 @@
-console.log('tabswitch.js loaded');
-
 function switchTab(event, tabId) {
     event.preventDefault();
 
