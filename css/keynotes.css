@@ -235,3 +235,63 @@
     height: auto !important;
     min-height: 100px;
 }
+
+
+
+/* ── Program Schedule ──────────────────────────────────── */
+.program-session {
+    border-left: 5px solid #6c757d;
+    margin-bottom: 32px;
+}
+
+.program-session__header {
+    background: #444;
+    color: #fff;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.program-session__header span { color: #7ecfff; margin-left: 6px; }
+
+/* Session colour variants */
+.program-session--industrial { border-left-color: #e07b39; }
+.program-session--industrial .program-session__header { background: #c0622a; }
+
+.program-session--bots { border-left-color: #5b8dd9; }
+.program-session--bots .program-session__header { background: #3a6ab5; }
+
+.program-session--agents { border-left-color: #5aaa6e; }
+.program-session--agents .program-session__header { background: #3a8c52; }
+
+/* Individual items */
+.program-item {
+    display: flex;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+}
+.program-item:last-child { border-bottom: none; }
+
+.program-item__time {
+    min-width: 50px;
+    color: #888;
+    font-size: 1em;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+.program-item__dur {
+    min-width: 36px;
+    color: #aaa;
+    font-size: 0.95em;
+    padding-top: 3px;
+    white-space: nowrap;
+}
+.program-item__body { flex: 1; }
+
+.program-item__title { font-weight: 600; font-size: 1.05em; color: #222; }
+.program-item__title a { color: #1a6fa8; text-decoration: none; }
+.program-item__title a:hover { text-decoration: underline; }
+.program-item__title--special { color: #666; font-style: italic; font-weight: normal; }
+
+.program-item__type { font-style: italic; color: #999; font-size: 0.92em; margin-top: 1px; }
+.program-item__authors { font-size: 0.95em; color: #555; margin-top: 3px; }

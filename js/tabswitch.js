@@ -8,7 +8,7 @@ function switchTab(event, tabId) {
     event.target.parentElement.classList.add('active');
 
     // Force hide both panes
-    var panes = ['accepted-papers', 'call-for-papers'];
+    var panes = ['program', 'accepted-papers', 'call-for-papers'];
     panes.forEach(function(id) {
         var el = document.getElementById(id);
         el.style.cssText = 'display: none !important;';
